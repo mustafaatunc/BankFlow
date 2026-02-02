@@ -68,3 +68,29 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 ```bash
 git clone [https://github.com/KULLANICI_ADIN/BankFlow.git](https://github.com/KULLANICI_ADIN/BankFlow.git)
 cd BankFlow
+
+### 2. Gerekli Kütüphaneleri Yükleyin
+```bash
+pip install -r requirements.txt
+
+### 3.Yönetici Şifresini Belirleyin (Güvenlik)
+```plaintext
+ADMIN_PASSWORD=GucluBirSifre123
+
+### 4.Modeli Eğitin
+```bash
+python main.py
+
+### 5.Uygulamayı Başlatın
+```bash
+python -m streamlit run app.py
+
+
+## 👤 Giriş Bilgileri
+Uygulama başladığında varsayılan yönetici hesabı ile giriş yapabilirsiniz:
+**E-posta:admin@admin.com
+**Şifre:.env dosyasına yazdığını şifre.
+
+
+
+
