@@ -105,6 +105,4 @@ Uygulama başladığında varsayılan yönetici hesabı ile giriş yapabilirsini
 
 ---
 
-## 📜 Lisans
 
-Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakabilirsiniz.
