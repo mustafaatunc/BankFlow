@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.db
+banka_veritabani.db
+.env
+.idea/
+.vscode/
+venv/

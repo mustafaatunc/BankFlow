@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+tensorflow
+joblib
+plotly
+fpdf
+bcrypt
+streamlit-option-menu
+scikit-learn
+python-dotenv
