@@ -16,7 +16,7 @@ Derin Öğrenme (Deep Learning) ve Kural Tabanlı (Rule-Based) algoritmaları bi
 ### 1. Detaylı Risk Analizi ve XAI (Açıklanabilir Yapay Zeka)
 Sistem sadece "Red" veya "Onay" kararı vermekle kalmaz; kararın arkasındaki matematiksel nedenleri analiz eder.
 
-![Risk Analiz Sonucu](images/1.png)
+![Risk Analiz Sonucu](images/analiz_sonuc.png)
 * **Risk Göstergesi:** 0-1900 arası puanlama ile görsel risk analizi.
 * **Karar Destek:** Model sonucu ve banka politikalarına göre nihai karar önerisi.
 * **Etki Analizi:** Yaş, gelir, vade gibi faktörlerin skoru ne kadar etkilediğini gösteren XAI grafiği.
@@ -26,14 +26,14 @@ Sistem sadece "Red" veya "Onay" kararı vermekle kalmaz; kararın arkasındaki m
 
 | Giriş Ekranı | Şifre Belirleme |
 | :---: | :---: |
-| ![Login Ekranı](images/2.png) | ![Şifre Ekranı](images/3.png) |
+| ![Login Ekranı](images/login.png) | ![Şifre Ekranı](images/sifre_yenileme.png) |
 | *Kurumsal e-posta ile güvenli giriş.* | *Yöneticinin yetkilendirdiği personeller için şifre belirleme.* |
 
 ### 3. Kullanıcı Dostu Arayüzler
 
 | Personel Paneli | Yönetici (Admin) Paneli |
 | :---: | :---: |
-| ![Personel Menü](images/4.png) | ![Admin Menü](images/5.png) |
+| ![Personel Menü](images/personel_ekrani.png) | ![Admin Menü](images/admin_menu.png) |
 | *Sadeleştirilmiş kredi başvuru ekranı.* | *Şube performansı, toplu sorgu ve ayarlar.* |
 
 ---
@@ -68,20 +68,3 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 ```bash
 git clone [https://github.com/KULLANICI_ADIN/BankFlow.git](https://github.com/KULLANICI_ADIN/BankFlow.git)
 cd BankFlow
-
-### 2. Gerekli Kütüphaneleri Yükleyin
-```bash
-pip install -r requirements.txt
-
-### 3. Yönetici Şifresini Belirleyin (Güvenlik)
-```plaintext
-ADMIN_PASSWORD=GucluBirSifre123
-
-### 4.Modeli Eğitin
-```bash
-python main.py
-
-### 5.Uygulamayı Başlatın
-```bash
-python -m streamlit run app.py
-
