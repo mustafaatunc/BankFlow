@@ -66,31 +66,45 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 ### 1. Repoyu Klonlayın
 ```bash
-git clone [https://github.com/KULLANICI_ADIN/BankFlow.git](https://github.com/KULLANICI_ADIN/BankFlow.git)
+git clone https://github.com/mustafaatunc/BankFlow.git
 cd BankFlow
+```
 
 ### 2. Gerekli Kütüphaneleri Yükleyin
 ```bash
 pip install -r requirements.txt
+```
 
-### 3.Yönetici Şifresini Belirleyin (Güvenlik)
-```plaintext
+### 3. Yönetici Şifresini Belirleyin (Güvenlik)
+Ana dizine `.env` adında bir dosya oluşturun ve içine yönetici girişi için kullanmak istediğiniz şifreyi yazın:
+
+```text
 ADMIN_PASSWORD=GucluBirSifre123
+```
 
-### 4.Modeli Eğitin
+### 4. Modeli Eğitin
+Uygulamayı ilk kez başlatmadan önce yapay zeka modelini eğitmeniz ve `pkl` dosyalarını oluşturmanız gerekir:
+
 ```bash
 python main.py
+```
 
-### 5.Uygulamayı Başlatın
+### 5. Uygulamayı Başlatın
 ```bash
 python -m streamlit run app.py
+```
 
+---
 
 ## 👤 Giriş Bilgileri
+
 Uygulama başladığında varsayılan yönetici hesabı ile giriş yapabilirsiniz:
-**E-posta:admin@admin.com
-**Şifre:.env dosyasına yazdığını şifre.
 
+* **E-posta:** `admin@admin.com`
+* **Şifre:** `.env` dosyasına yazdığınız şifre.
 
+---
 
+## 📜 Lisans
 
+Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakabilirsiniz.
