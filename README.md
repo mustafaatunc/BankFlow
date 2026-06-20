@@ -1,108 +1,106 @@
-# 🏦 BankFlow | Yapay Zeka Destekli Kredi Risk Analiz Sistemi
+# 🏦 BankFlow | AI-Powered Credit Risk Analysis System
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Framework-red)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-**BankFlow**, bankacılık süreçlerinde kredi tahsis kararlarını hızlandırmak, güvenilirliği artırmak ve operasyonel verimliliği sağlamak amacıyla geliştirilmiş yeni nesil bir finansal teknoloji uygulamasıdır. 
+**BankFlow** is a next-generation financial technology application developed to accelerate credit allocation decisions, increase reliability, and ensure operational efficiency in banking processes. 
 
-Derin Öğrenme (Deep Learning) ve Kural Tabanlı (Rule-Based) algoritmaları birleştiren **hibrit karar motoru** sayesinde, saniyeler içinde risk skorlaması yapar ve kararın nedenlerini (XAI) açıklar.
+Thanks to its **hybrid decision engine** that combines Deep Learning and Rule-Based algorithms, it performs risk scoring in seconds and explains the reasons for the decision (XAI).
 
 ---
 
-## 📸 Proje Ekran Görüntüleri
+## 📸 Project Screenshots
 
-### 1. Detaylı Risk Analizi ve XAI (Açıklanabilir Yapay Zeka)
-Sistem sadece "Red" veya "Onay" kararı vermekle kalmaz; kararın arkasındaki matematiksel nedenleri analiz eder.
+### 1. Detailed Risk Analysis and XAI (Explainable AI)
+The system doesn't just make a "Reject" or "Approve" decision; it analyzes the mathematical reasons behind the decision.
 
-![Risk Analiz Sonucu](images/analiz_sonuc.png)
-* **Risk Göstergesi:** 0-1900 arası puanlama ile görsel risk analizi.
-* **Karar Destek:** Model sonucu ve banka politikalarına göre nihai karar önerisi.
-* **Etki Analizi:** Yaş, gelir, vade gibi faktörlerin skoru ne kadar etkilediğini gösteren XAI grafiği.
+![Risk Analysis Result](images/analiz_sonuc.png)
+* **Risk Indicator:** Visual risk analysis with scoring between 0-1900.
+* **Decision Support:** Final decision recommendation based on model results and bank policies.
+* **Impact Analysis:** XAI graph showing how factors like age, income, and maturity affect the score.
 
-### 2. Güvenli Giriş ve Kullanıcı Yönetimi
-**Role-Based Access Control (RBAC)** mimarisi ile Şube Müdürü ve Personel için ayrıştırılmış arayüzler.
+### 2. Secure Login and User Management
+Separated interfaces for Branch Manager and Staff with **Role-Based Access Control (RBAC)** architecture.
 
-| Giriş Ekranı | Şifre Belirleme |
+| Login Screen | Password Setup |
 | :---: | :---: |
-| ![Login Ekranı](images/login.png) | ![Şifre Ekranı](images/sifre_yenileme.png) |
-| *Kurumsal e-posta ile güvenli giriş.* | *Yöneticinin yetkilendirdiği personeller için şifre belirleme.* |
+| ![Login Screen](images/login.png) | ![Password Screen](images/sifre_yenileme.png) |
+| *Secure login with corporate email.* | *Password setup for staff authorized by the manager.* |
 
-### 3. Kullanıcı Dostu Arayüzler
+### 3. User-Friendly Interfaces
 
-| Personel Paneli | Yönetici (Admin) Paneli |
+| Staff Panel | Manager (Admin) Panel |
 | :---: | :---: |
-| ![Personel Menü](images/personel_ekrani.png) | ![Admin Menü](images/admin_menu.png) |
-| *Sadeleştirilmiş kredi başvuru ekranı.* | *Şube performansı, toplu sorgu ve ayarlar.* |
+| ![Staff Menu](images/personel_ekrani.png) | ![Admin Menu](images/admin_menu.png) |
+| *Simplified credit application screen.* | *Branch performance, batch query, and settings.* |
 
 ---
 
-## 🚀 Temel Özellikler
+## 🚀 Key Features
 
-* **🧠 Hibrit Karar Motoru:** TensorFlow (Neural Network) ve Bankacılık iş kurallarının (Business Rules) birleşimi.
-* **🔍 Açıklanabilir Yapay Zeka (XAI):** Müşterinin neden reddedildiğini veya onaylandığını şeffaf bir şekilde açıklar.
-* **📄 Otomatik Raporlama:** Analiz sonuçlarını anında kurumsal formatta PDF olarak indirilebilir.
-* **📂 Toplu İşlem (Batch Processing):** Excel listesi yükleyerek binlerce müşteriyi aynı anda analiz etme yeteneği.
-* **📊 Yönetim Paneli:** Şube ve personel bazlı ciro, onay oranı ve performans grafikleri (Plotly).
-* **🛡️ Yüksek Güvenlik:** `bcrypt` ile şifreleme, SQL Injection korumalı veritabanı yapısı ve güvenli oturum yönetimi.
-
----
-
-## 🛠️ Kullanılan Teknolojiler
-
-* **Programlama Dili:** Python 3.x
-* **Arayüz (UI):** Streamlit
-* **Yapay Zeka & ML:** TensorFlow, Keras, Scikit-Learn
-* **Veri İşleme:** Pandas, NumPy
-* **Görselleştirme:** Plotly, Matplotlib
-* **Veritabanı:** SQLite3
+* **🧠 Hybrid Decision Engine:** Combination of TensorFlow (Neural Network) and Banking business rules.
+* **🔍 Explainable AI (XAI):** Transparently explains why the customer was rejected or approved.
+* **📄 Automated Reporting:** Analysis results can be instantly downloaded as a PDF in corporate format.
+* **📂 Batch Processing:** Ability to analyze thousands of customers simultaneously by uploading an Excel list.
+* **📊 Management Panel:** Branch and staff-based turnover, approval rate, and performance charts (Plotly).
+* **🛡️ High Security:** Encryption with `bcrypt`, SQL Injection protected database structure, and secure session management.
 
 ---
 
-## ⚙️ Kurulum ve Çalıştırma
+## 🛠️ Technologies Used
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+* **Programming Language:** Python 3.x
+* **Interface (UI):** Streamlit
+* **AI & ML:** TensorFlow, Keras, Scikit-Learn
+* **Data Processing:** Pandas, NumPy
+* **Visualization:** Plotly, Matplotlib
+* **Database:** SQLite3
 
-### 1. Repoyu Klonlayın
+---
+
+## ⚙️ Installation and Execution
+
+Follow the steps below to run the project on your local machine:
+
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/mustafaatunc/BankFlow.git
+git clone [https://github.com/mustafaatunc/BankFlow.git](https://github.com/mustafaatunc/BankFlow.git)
 cd BankFlow
 ```
 
-### 2. Gerekli Kütüphaneleri Yükleyin
+### 2. Install Required Libraries
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Yönetici Şifresini Belirleyin (Güvenlik)
-Ana dizine `.env` adında bir dosya oluşturun ve içine yönetici girişi için kullanmak istediğiniz şifreyi yazın:
+### 3. Set the Admin Password (Security)
+Create a file named `.env` in the root directory and write the password you want to use for admin login inside it:
 
 ```text
-ADMIN_PASSWORD=GucluBirSifre123
+ADMIN_PASSWORD=StrongPassword123
 ```
 
-### 4. Modeli Eğitin
-Uygulamayı ilk kez başlatmadan önce yapay zeka modelini eğitmeniz ve `pkl` dosyalarını oluşturmanız gerekir:
+### 4. Train the Model
+Before launching the application for the first time, you need to train the AI model and generate the `pkl` files:
 
 ```bash
 python main.py
 ```
 
-### 5. Uygulamayı Başlatın
+### 5. Launch the Application
 ```bash
 python -m streamlit run app.py
 ```
 
 ---
 
-## 👤 Giriş Bilgileri
+## 👤 Login Credentials
 
-Uygulama başladığında varsayılan yönetici hesabı ile giriş yapabilirsiniz:
+When the application starts, you can log in with the default admin account:
 
-* **E-posta:** `admin@admin.com`
-* **Şifre:** `.env` dosyasına yazdığınız şifre.
+* **Email:** `admin@admin.com`
+* **Password:** The password you wrote in the `.env` file.
 
 ---
-
-
