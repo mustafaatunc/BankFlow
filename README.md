@@ -104,3 +104,8 @@ When the application starts, you can log in with the default admin account:
 * **Password:** The password you wrote in the `.env` file.
 
 ---
+
+
+© Copyright & License
+© 2026 Mustafa Tunç. All Rights Reserved.
+This repository is strictly for portfolio and academic demonstration purposes. No part of this code may be reproduced, distributed, modified, or used for any commercial or personal projects without explicit written permission from the author.
